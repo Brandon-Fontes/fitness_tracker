@@ -9,12 +9,14 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 mongoose.connect(
-    "mongodb://localhost/test",
+    "mongodb+srv://brandon:havefun1@fitness.reuhs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     {
         useNewUrlParser: true,
         useFindAndModify: false
     }
 );
+
+//password is havefun1
 
 mongoose.connection.on('connected', () => {
     console.log("Mongoose is connected");
