@@ -16,6 +16,10 @@ mongoose.connect(
     }
 );
 
+mongoose.connection.on('connected', () => {
+    console.log("Mongoose is connected");
+});
+
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(express.static("public"));
