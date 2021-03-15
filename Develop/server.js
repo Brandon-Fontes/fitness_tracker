@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 mongoose.connect(
-    "mongodb+srv://user@mycluster-i5mnv.mongodb.net/workouts?retryWrites=true&w=majority",
+    "mongodb://localhost/test",
     {
         useNewUrlParser: true,
         useFindAndModify: false
